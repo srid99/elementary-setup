@@ -83,8 +83,8 @@ $INSTALL synapse
 $INSTALL python-software-properties nodejs
 $INSTALL git
 curl -L http://install.ohmyz.sh | sh
-# Not yet done. Run the command 'chsh $USER -s $(which zsh)' after the installation
 
+# Installation is done. Remove the unused pacakges.
 sudo apt-get --purge autoremove
 
 # All the needed packages are installed. But still it is not done yet.
@@ -92,3 +92,4 @@ sudo apt-get --purge autoremove
 
 # 1. Run 'sudo pipelight-plugin --enable silverlight' to enable silverlight from pipelight plugin
 # 2. Run 'chsh $USER -s $(which zsh)' to make 'zsh' as default shell
+

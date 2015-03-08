@@ -60,7 +60,7 @@ $ADD_REPOSITORY ppa:synapse-core/ppa
 $ADD_REPOSITORY ppa:webupd8team/sublime-text-3
 $ADD_REPOSITORY ppa:otto-kesselgulasch/gimp
 
-# Add google repo
+# Add google chrome repo
 wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
 sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" > /etc/apt/sources.list.d/google-chrome.list'
 

@@ -40,6 +40,7 @@ $INSTALL zsh
 # Development
 $INSTALL openjdk-7-jdk
 $INSTALL maven
+$INSTALL virtualbox-4.3
 
 # From third party repositories
 

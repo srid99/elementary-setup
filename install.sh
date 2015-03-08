@@ -2,11 +2,13 @@
 
 # Don't run the script with 'sudo'
 
-INSTALL="sudo apt-get install -y"
-ADD_REPOSITORY="sudo apt-add-repository -y"
+INSTALL='sudo apt-get install -y'
+ADD_REPOSITORY='sudo apt-add-repository -y'
+
+# Update the repo
+sudo apt-get update
 
 # Browsers
-$INSTALL chromium-browser
 $INSTALL firefox
 
 # Disk utilities
@@ -57,7 +59,15 @@ $ADD_REPOSITORY ppa:synapse-core/ppa
 $ADD_REPOSITORY ppa:webupd8team/sublime-text-3
 $ADD_REPOSITORY ppa:otto-kesselgulasch/gimp
 
+# Add google repo
+wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" > /etc/apt/sources.list.d/google-chrome.list'
+
+# Update again for the newly added repo's
 sudo apt-get update
+
+# Browsers
+$INSTALL google-chrome-stable
 
 # Tweaks and themes
 $INSTALL elementary-tweaks elementary-plank-themes super-wingpanel

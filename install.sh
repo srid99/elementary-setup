@@ -59,10 +59,15 @@ $ADD_REPOSITORY ppa:nilarimogard/webupd8
 $ADD_REPOSITORY ppa:synapse-core/ppa
 $ADD_REPOSITORY ppa:webupd8team/sublime-text-3
 $ADD_REPOSITORY ppa:otto-kesselgulasch/gimp
+$ADD_REPOSITORY ppa:keepassx/daily
 
 # Add google chrome repo
 wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
 sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" > /etc/apt/sources.list.d/google-chrome.list'
+
+# Add dropbox repo
+sudo apt-key adv --keyserver pgp.mit.edu --recv-keys 5044912E
+sudo sh -c 'echo "deb http://linux.dropbox.com/ubuntu/ utopic main" >> /etc/apt/sources.list.d/dropbox.list'
 
 # Update again for the newly added repo's
 sudo apt-get update
@@ -79,6 +84,9 @@ $INSTALL pacifica-icon-theme
 # System monitors
 $INSTALL indicator-sysmonitor
 
+# Password manager
+$INSTALL keepassx
+
 # Nvidia graphics driver
 $INSTALL bumblebee bumblebee-nvidia virtualgl linux-headers-generic
 
@@ -87,6 +95,7 @@ $INSTALL pepflashplugin-installer
 $INSTALL minitube
 $INSTALL gimp
 $INSTALL pipelight-multi
+$INSTALL dropbox
 
 # Dev and command line utilities
 $INSTALL sublime-text-installer

@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 #########################################################################################
 # Remove all old kernels except the current and last old kernel for fallback purpose

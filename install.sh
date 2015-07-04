@@ -40,16 +40,12 @@ $INSTALL zsh
 # Development
 $INSTALL openjdk-7-jdk
 $INSTALL maven
-$INSTALL virtualbox-4.3
+$INSTALL virtualbox
 
 # From third party repositories
-
-$ADD_REPOSITORY ppa:versable/elementary-update
+$ADD_REPOSITORY ppa:mpstark/elementary-tweaks-daily
 $ADD_REPOSITORY ppa:numix/ppa
-$ADD_REPOSITORY ppa:moka/stable
-$ADD_REPOSITORY ppa:fsvh/pacifica-icon-theme
 
-$ADD_REPOSITORY ppa:alexeftimie/ppa
 $ADD_REPOSITORY ppa:git-core/ppa
 $ADD_REPOSITORY ppa:bumblebee/stable
 $ADD_REPOSITORY ppa:chris-lea/node.js
@@ -76,13 +72,9 @@ sudo apt-get update
 $INSTALL google-chrome-stable
 
 # Tweaks and themes
-$INSTALL elementary-tweaks elementary-plank-themes super-wingpanel
+$INSTALL elementary-tweaks 
 $INSTALL numix-icon-theme-circle
-$INSTALL faba-icon-theme moka-icon-theme faba-mono-icons
-$INSTALL pacifica-icon-theme
-
-# System monitors
-$INSTALL indicator-sysmonitor
+$INSTALL numix-gtk-theme 
 
 # Password manager
 $INSTALL keepassx

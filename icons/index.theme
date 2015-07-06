@@ -1,0 +1,14 @@
+[Icon Theme]
+Name=Moka-Ext
+Comment=My custom icon set based on Moka
+#Inherits=Moka,Faba,elementary,gnome
+Inherits=Moka,Faba,elementary
+
+# Directory list
+Directories=24x24/panel
+
+[24x24/panel]
+Context=Status
+Size=24
+Type=Fixed
+

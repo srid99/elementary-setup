@@ -6,7 +6,7 @@ INSTALL='sudo apt-get install -y'
 ADD_REPOSITORY='sudo apt-add-repository -y'
 
 # Update the repo
-sudo apt-get update
+sudo apt-get update upgrade dist-upgrade
 
 # Browsers
 $INSTALL firefox
@@ -20,17 +20,23 @@ $INSTALL baobab
 $INSTALL gnome-system-monitor
 $INSTALL indicator-multiload
 
+# System utilities
+$INSTALL dconf-tools
+$INSTALL seahorse
+
 # Command line utilities
 $INSTALL xclip
 $INSTALL locate
 $INSTALL curl
 $INSTALL wget
-$INSTALL dconf-tools
+$INSTALL tree
 
 # Media
 $INSTALL vlc
+$INSTALL skype
 $INSTALL flashplugin-installer
 $INSTALL ttf-tamil-fonts
+$INSTALL transmission
 
 # Terminal essentials
 $INSTALL gnome-terminal
@@ -39,12 +45,11 @@ $INSTALL zsh
 
 # Development
 $INSTALL openjdk-7-jdk
-$INSTALL maven
 $INSTALL virtualbox
 
 # From third party repositories
 $ADD_REPOSITORY ppa:mpstark/elementary-tweaks-daily
-$ADD_REPOSITORY ppa:numix/ppa
+$ADD_REPOSITORY ppa:moka/stable
 
 $ADD_REPOSITORY ppa:git-core/ppa
 $ADD_REPOSITORY ppa:bumblebee/stable
@@ -56,6 +61,11 @@ $ADD_REPOSITORY ppa:synapse-core/ppa
 $ADD_REPOSITORY ppa:webupd8team/sublime-text-3
 $ADD_REPOSITORY ppa:otto-kesselgulasch/gimp
 $ADD_REPOSITORY ppa:keepassx/daily
+$ADD_REPOSITORY ppa:linrunner/tlp
+$ADD_REPOSITORY ppa:fossfreedom/indicator-sysmonitor
+$ADD_REPOSITORY ppa:libreoffice/ppa
+
+$ADD_REPOSITORY "deb http://ppa.launchpad.net/natecarlson/maven3/ubuntu precise main"
 
 # Add google chrome repo
 wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
@@ -63,7 +73,11 @@ sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" > /etc
 
 # Add dropbox repo
 sudo apt-key adv --keyserver pgp.mit.edu --recv-keys 5044912E
-sudo sh -c 'echo "deb http://linux.dropbox.com/ubuntu/ utopic main" >> /etc/apt/sources.list.d/dropbox.list'
+sudo sh -c 'echo "deb http://linux.dropbox.com/ubuntu/ trusty main" >> /etc/apt/sources.list.d/dropbox.list'
+
+# Add Arc theme repo
+wget -q -O - http://download.opensuse.org/repositories/home:Horst3180/xUbuntu_15.04/Release.key | sudo apt-key add -
+sudo sh -c "echo 'deb http://download.opensuse.org/repositories/home:/Horst3180/xUbuntu_15.04/ /' >> /etc/apt/sources.list.d/arc-theme.list"
 
 # Update again for the newly added repo's
 sudo apt-get update
@@ -72,15 +86,28 @@ sudo apt-get update
 $INSTALL google-chrome-stable
 
 # Tweaks and themes
-$INSTALL elementary-tweaks 
-$INSTALL numix-icon-theme-circle
-$INSTALL numix-gtk-theme 
+$INSTALL elementary-tweaks
+$INSTALL moka-icon-theme
+$INSTALL faba-icon-theme
+$INSTALL faba-mono-icons
+$INSTALL arc-theme
+$INSTALL paper-gtk-theme
+$INSTALL moka-gtk-theme
+$INSTALL orchis-gtk-theme
 
 # Password manager
 $INSTALL keepassx
 
+# System
+$INSTALL tlp tlp-rdw
+$INSTALL indicator-sysmonitor
+$INSTALL caffeine-plus
+
 # Nvidia graphics driver
 $INSTALL bumblebee bumblebee-nvidia virtualgl linux-headers-generic
+
+# Essentials
+$INSTALL libreoffice
 
 # Media
 $INSTALL pepflashplugin-installer
@@ -90,6 +117,7 @@ $INSTALL pipelight-multi
 $INSTALL dropbox
 
 # Dev and command line utilities
+$INSTALL maven3
 $INSTALL sublime-text-installer
 $INSTALL synapse
 $INSTALL python-software-properties nodejs
@@ -98,5 +126,3 @@ curl -L http://install.ohmyz.sh | sh
 
 # Installation is done. Remove the unused pacakges.
 sudo apt-get --purge autoremove
-
-

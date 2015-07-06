@@ -1,13 +1,11 @@
-elementary-setup
-================
+elementaryOS setup
+==================
 
-A setup script to install the tools which I use on daily basis after installing elementary-os.
+A setup script to install the softwares/tools/utilities which I use on daily.
+Though the script itself can be used for any Ubuntu based distro but it is written for elementaryOS.
 
-Run the install.sh script which will install the packages.
+Run the `install.sh` script which will install the packages.
 
-After running the script all the needed packages will be installed. But still it is not done yet.
-Follow below instructions to complete the setup.
-
-1. Run `sudo pipelight-plugin --enable silverlight` to enable silverlight from pipelight plugin
-2. Run `chsh $USER -s $(which zsh)` to make 'zsh' as default shell
-
+Once after installing the packages go through the things mentioned in `INSTRUCTIONS.md` file to complete the setup.
+The installation script installs the packages. But few packages needs configurations to make use of them.
+For now this is done manually so we know what kind of configuration is needed and why.

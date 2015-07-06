@@ -4,6 +4,7 @@ The below configurations has to be done manaually after running the `install.sh`
 
 Note: This is a self-instruction. Make sure these changes suits your taste. You might not need all of them.
 
+
 ### Terminal
 
 Terminal settings has to be changed. Set Opacity to 80 and choose the theme to Zenburn.
@@ -17,26 +18,21 @@ Change your shell to ZSH by running the below command,
 	chsh $USER -s $(which zsh)
 
 
-### Themes
+### Icons
 
-GTK: Arc theme
-
-Icons: Moka (Customized)
-
-The `install.sh` script installs the above things. But using the elementary-tweaks we have to choose the GTK and Icons.
-Before doing that run the `install.sh` script under icons folder.
+Copy the folder `Moka-Ext` from icons folder to `/usr/share/icons`
 
 
 ### Plank
 
-Copy the folders `Orchis-Glass-Ext` and `TransparentExt` to `/usr/share/plank/themes/` directory
+Copy the folders `Orchis-Glass-Ext` and `TransparentExt` from plank folder to `/usr/share/plank/themes/` directory
 
 
 ### Tweaks
 
-Using the Tweaks which can be found in Settings plug we can configure few things. Select the GTK and Metacity theme as `Arc` and the icons theme as Moka-Ext and the plank theme as `Orchis-Glass-Ext` or `TransparentExt`. Choose your favourite wallpaper (I prefer a dark one since it goes well with our Terminal opacity).
+Using the Tweaks which can be found in Settings plug we can configure few things. Select the GTK and Metacity theme as `Arc` and the icons theme as `Moka-Ext` and the plank theme as `Orchis-Glass-Ext` or `TransparentExt`. Choose your favourite wallpaper (I prefer a dark one since it goes well with our Terminal opacity).
 
-In the plank settings, set the icon size to 32 and 
+In the plank settings, set the icon size to 32 and choose `Don't hide` option for hide mode option.
 
 
 ### Dropbox
@@ -102,5 +98,4 @@ Install telegram by running the `install.sh` script under telegram directory. No
 ### Calendar (Maya)
 
 Sync Calendar with Google Calendar (if using 2-step verification then you have to provide the generated password)
-
 

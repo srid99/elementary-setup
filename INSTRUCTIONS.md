@@ -2,7 +2,7 @@
 
 The below configurations has to be done manaually after running the `install.sh` script.
 
-Note: This is a self-instruction. Make sure these changes suits your taste. You might not need all of them.
+Note: This is a self-instruction manual. Make sure these changes suits your taste. You might not need all of them.
 
 
 ### Terminal
@@ -99,3 +99,31 @@ Install telegram by running the `install.sh` script under telegram directory. No
 
 Sync Calendar with Google Calendar (if using 2-step verification then you have to provide the generated password)
 
+
+### Icons on Plank
+
+* Chrome
+* Firefox
+* IntelliJ
+* Sublime Text
+* Terminal
+* Google Note
+* Calendar
+* Pocket
+* KeePassX
+* Gimp
+* Transmission
+* Skype
+* Screenshot
+* VLC
+* Music
+* Photos
+* Files
+* dConf Editor
+* Software Updater
+* System Settings
+
+
+### Oh-My-Zsh
+
+Configure the needed Oh-My-Zsh plugins like z, mvn, vagrant, git and the rest

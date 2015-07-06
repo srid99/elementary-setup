@@ -1,7 +1,7 @@
 elementaryOS setup
 ==================
 
-A setup script to install the softwares/tools/utilities which I use on daily.
+A setup script to install the softwares/tools/utilities which I use regularly.
 Though the script itself can be used for any Ubuntu based distro but it is written for elementaryOS.
 
 Run the `install.sh` script which will install the packages.

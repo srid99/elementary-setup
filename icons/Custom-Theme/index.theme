@@ -1,8 +1,8 @@
 [Icon Theme]
-Name=Moka-Ext
+Name=Custom-Theme
 Comment=My custom icon set based on Moka
-#Inherits=Moka,Faba,elementary,gnome
-Inherits=Moka,Faba,elementary
+
+Inherits=Captiva,Moka,Faba,elementary
 
 # Directory list
 Directories=24x24/panel

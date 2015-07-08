@@ -46,6 +46,7 @@ $INSTALL zsh
 # Development
 $INSTALL openjdk-7-jdk
 $INSTALL virtualbox
+$INSTALL build-essential
 
 # From third party repositories
 $ADD_REPOSITORY ppa:mpstark/elementary-tweaks-daily

@@ -20,7 +20,7 @@ Change your shell to ZSH by running the below command,
 
 ### Icons
 
-Copy the folder `Moka-Ext` from icons folder to `/usr/share/icons`
+Copy the folder `Custom-Theme` from icons folder to `/usr/share/icons`
 
 
 ### Plank
@@ -30,7 +30,7 @@ Copy the folders `Orchis-Glass-Ext` and `TransparentExt` from plank folder to `/
 
 ### Tweaks
 
-Using the Tweaks which can be found in Settings plug we can configure few things. Select the GTK and Metacity theme as `Arc` and the icons theme as `Moka-Ext` and the plank theme as `Orchis-Glass-Ext` or `TransparentExt`. Choose your favourite wallpaper (I prefer a dark one since it goes well with our Terminal opacity).
+Using the Tweaks which can be found in Settings plug we can configure few things. Select the GTK and Metacity theme as `Arc` and the icons theme as `Custom-Theme` and the plank theme as `Orchis-Glass-Ext` or `TransparentExt`. Choose your favourite wallpaper (I prefer a dark one since it goes well with our Terminal opacity).
 
 In the plank settings, set the icon size to 32 and choose `Don't hide` option for hide mode option.
 
@@ -127,3 +127,11 @@ Sync Calendar with Google Calendar (if using 2-step verification then you have t
 ### Oh-My-Zsh
 
 Configure the needed Oh-My-Zsh plugins like z, mvn, vagrant, git and the rest
+
+
+### NPM
+
+Follow the steps provided in below guide to install npm packages in global without `sudo` permission
+
+https://github.com/sindresorhus/guides/blob/master/npm-global-without-sudo.md
+

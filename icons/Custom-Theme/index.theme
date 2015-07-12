@@ -1,8 +1,8 @@
 [Icon Theme]
 Name=Custom-Theme
-Comment=My custom icon set based on Moka
+Comment=My custom icon set based on Moka, Captiva and Faba
 
-Inherits=Captiva,Moka,Faba,elementary
+Inherits=Captiva,Moka,Faba,elementaryPlus
 
 # Directory list
 Directories=24x24/panel
@@ -11,4 +11,3 @@ Directories=24x24/panel
 Context=Status
 Size=24
 Type=Fixed
-

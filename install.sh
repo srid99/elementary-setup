@@ -52,6 +52,7 @@ $INSTALL build-essential
 $ADD_REPOSITORY ppa:mpstark/elementary-tweaks-daily
 $ADD_REPOSITORY ppa:moka/stable
 $ADD_REPOSITORY ppa:captiva/ppa
+$ADD_REPOSITORY ppa:cybre/elementaryplus
 
 $ADD_REPOSITORY ppa:git-core/ppa
 $ADD_REPOSITORY ppa:bumblebee/stable
@@ -93,6 +94,7 @@ $INSTALL faba-icon-theme
 $INSTALL faba-mono-icons
 $INSTALL moka-icon-theme
 $INSTALL captiva-icon-theme
+$INSTALL elementaryplus
 
 $INSTALL arc-theme
 $INSTALL paper-gtk-theme

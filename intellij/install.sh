@@ -6,7 +6,7 @@
 APPLICATION=intellij-idea
 
 # Application path 
-APPLICATION_PATH=$(cd -P -- "$(dirname -- "$0")" && pwd -P)
+APPLICATION_PATH=/appl/software/ide/intellij/bin
 
 # Make application exeuctable
 echo "Installing to /usr/bin folder, requires permission..."

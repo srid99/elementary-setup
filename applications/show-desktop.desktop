@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=Show Desktop
+Comment=Hide all windows and show the desktop
+Exec=wmctrl -k on
+Icon=show-desktop
+Terminal=false
+Type=Application
+Categories=Utility;
+NoDisplay=true
+X-Ubuntu-Gettext-Domain=show-desktop
+X-GNOME-Autostart-Notify=false
+

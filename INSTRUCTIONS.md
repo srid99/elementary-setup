@@ -5,6 +5,13 @@ The below configurations has to be done manaually after running the `install.sh`
 Note: This is a self-instruction manual. Make sure these changes suits your taste. You might not need all of them.
 
 
+### Public key not available
+
+If you get this error run the below command with the missing public key
+
+	sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys <PUBLIC_KEY>
+
+
 ### Terminal
 
 Terminal settings has to be changed. Set Opacity to 80 and choose the theme to Zenburn.
@@ -27,6 +34,7 @@ Copy the folder `Custom-Theme` from icons folder to `/usr/share/icons`
 
 Copy the folders `Orchis-Glass-Ext` and `TransparentExt` from plank folder to `/usr/share/plank/themes/` directory
 
+Copy the desktop icons from `applications` to `/usr/share/applications` then add them to plank.
 
 ### Tweaks
 
@@ -37,16 +45,18 @@ In the plank settings, set the icon size to 32 and choose `Don't hide` option fo
 
 ### Dropbox
 
-Run the script to fix the dropbox tray icon issue. Before running the script make sure dropbox is installed properly.
+Run the script to fix the dropbox tray icon issue. Before running the script make sure dropbox is installed properly. Install doesn't work. Has to download directly from the site works.
+
+	cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf -
 
 
 ### Synapse
-	
+
 Run the command `synapse` from command line to open Synapse. Goto preferences and select the checkbox to run on startup.
 
 
 ### IntelliJ
-	
+
 Download and install IntelliJ. Run the `install.sh` script under intellij folder to fix the icon issue.
 
 
@@ -126,7 +136,7 @@ Sync Calendar with Google Calendar (if using 2-step verification then you have t
 
 ### Oh-My-Zsh
 
-Configure the needed Oh-My-Zsh plugins like z, mvn, vagrant, git and the rest
+Configure the needed Oh-My-Zsh plugins like z, mvn, vagrant, git and the rest. The theme I use is "intheloop".
 
 
 ### NPM

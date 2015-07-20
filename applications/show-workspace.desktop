@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=Show Workspace
+Comment=Show workspace
+Exec=dbus-send --session --dest=org.pantheon.gala --print-reply /org/pantheon/gala org.pantheon.gala.PerformAction int32:1
+Icon=workspace-overview
+Terminal=false
+Type=Application
+Categories=Utility;
+NoDisplay=true
+X-Ubuntu-Gettext-Domain=workspace-overview
+X-GNOME-Autostart-Notify=false
+

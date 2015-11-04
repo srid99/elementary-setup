@@ -19,7 +19,7 @@ touch $FILE_DESKTOP
 echo "[Desktop Entry]" >> $FILE_DESKTOP
 echo "Type=Application" >> $FILE_DESKTOP
 echo "Encoding=UTF-8" >> $FILE_DESKTOP
-echo "Name=Intellij" >> $FILE_DESKTOP
+echo "Name=IntelliJ" >> $FILE_DESKTOP
 echo "GenericName=Code Editor" >> $FILE_DESKTOP
 echo "Comment=Code Editor" >> $FILE_DESKTOP
 echo "StartupWMClass=jetbrains-idea" >> $FILE_DESKTOP

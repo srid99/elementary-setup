@@ -75,6 +75,7 @@ $ADD_REPOSITORY ppa:fossfreedom/indicator-sysmonitor
 $ADD_REPOSITORY ppa:libreoffice/ppa
 $ADD_REPOSITORY ppa:w-vollprecht/ppa
 $ADD_REPOSITORY ppa:noobslab/apps
+$ADD_REPOSITORY ppa:birdie-team/stable
 
 $ADD_REPOSITORY "deb http://ppa.launchpad.net/natecarlson/maven3/ubuntu precise main"
 
@@ -139,6 +140,7 @@ $INSTALL gimp
 $INSTALL pipelight-multi
 $INSTALL dropbox
 $INSTALL skype
+$INSTALL birdie
 
 # Dev and command line utilities
 $INSTALL maven3

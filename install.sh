@@ -76,6 +76,7 @@ $ADD_REPOSITORY ppa:libreoffice/ppa
 $ADD_REPOSITORY ppa:w-vollprecht/ppa
 $ADD_REPOSITORY ppa:noobslab/apps
 $ADD_REPOSITORY ppa:birdie-team/stable
+$ADD_REPOSITORY ppa:webupd8team/java
 
 $ADD_REPOSITORY "deb http://ppa.launchpad.net/natecarlson/maven3/ubuntu precise main"
 
@@ -144,6 +145,7 @@ $INSTALL birdie
 
 # Dev and command line utilities
 $INSTALL maven3
+$INSTALL oracle-java8-installer
 $INSTALL sbt
 $INSTALL sublime-text-installer
 $INSTALL synapse

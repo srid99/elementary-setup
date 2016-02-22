@@ -45,9 +45,9 @@ In the plank settings, set the icon size to 32 and choose `Don't hide` option fo
 
 ### Dropbox
 
-Run the script to fix the dropbox tray icon issue. Before running the script make sure dropbox is installed properly. Install doesn't work. Has to download directly from the site works.
+Checkout the below repo and run the install script. This installs and fixes the wingpanel icon issue with dropbox.
 
-	cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf -
+	https://github.com/zant95/elementary-dropbox.git
 
 
 ### Synapse
@@ -67,6 +67,7 @@ First install the package manager and then install the below plugins,
 * Markdown
 * Todo
 * Pretty print
+* Material theme
 
 
 ### Maven
@@ -83,7 +84,7 @@ The `install.sh` script will install system indicator. Once it is done run the c
 http://askubuntu.com/questions/100306/is-an-internet-connectivity-indicator-applet-available-for-the-unity-panel/453975#453975
 
 
-#### Caffeine
+### Caffeine
 
 Run `caffeine-plus` and make sure it is installed. After restarting the system it should be there in the system tray.
 

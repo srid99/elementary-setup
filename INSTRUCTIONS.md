@@ -64,7 +64,8 @@ Download and install IntelliJ. Run the `install.sh` script under intellij folder
 
 First install the package manager and then install the below plugins,
 
-* Markdown
+* Markdown editing
+* Markdown preview
 * Todo
 * Pretty print
 * Material theme

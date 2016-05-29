@@ -125,6 +125,8 @@ Sync Calendar with Google Calendar (if using 2-step verification then you have t
 * KeePassX
 * Gimp
 * Transmission
+* Telegram
+* Slack
 * Skype
 * Screenshot
 * VLC

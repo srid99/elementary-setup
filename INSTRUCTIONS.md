@@ -53,6 +53,20 @@ Checkout the below repo and run the install script. This installs and fixes the 
 ### Synapse
 
 Run the command `synapse` from command line to open Synapse. Goto preferences and select the checkbox to run on startup.
+Add below configuration to the `$HOME/.config/synapse/config.json` file to get the shortcut working.
+
+```
+{
+  "ui" : {
+   "shortcuts" : {
+        "activate" : "<Super><Alt>space"
+    },
+    "global" : {
+      "ui-type" : "default"
+    }
+  }
+}
+```
 
 
 ### IntelliJ

@@ -145,7 +145,7 @@ Sync Calendar with Google Calendar (if using 2-step verification then you have t
 
 ### Oh-My-Zsh
 
-Configure the needed Oh-My-Zsh plugins like (z mvn docker git) and so on. The theme I prefer is "intheloop".
+Configure the needed Oh-My-Zsh plugins like (z mvn docker docker-compose go git) and so on. The theme I prefer is "intheloop".
 
 
 ### NPM

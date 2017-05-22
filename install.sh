@@ -66,6 +66,7 @@ $ADD_REPOSITORY ppa:otto-kesselgulasch/gimp
 $ADD_REPOSITORY ppa:linrunner/tlp
 $ADD_REPOSITORY ppa:fossfreedom/indicator-sysmonitor
 $ADD_REPOSITORY ppa:libreoffice/ppa
+$ADD_REPOSITORY ppa:longsleep/golang-backports
 
 # Add google chrome repo
 wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
@@ -122,6 +123,7 @@ $INSTALL docker-engine
 $INSTALL sublime-text-installer
 $INSTALL nodejs
 $INSTALL git
+$INSTALL golang-go
 curl -L http://install.ohmyz.sh | sh
 
 # Installation is done. Remove the unused pacakges.

@@ -2,7 +2,7 @@
 
 The below configurations has to be done manaually after running the `install.sh` script.
 
-Note: This is a self-instruction manual. Make sure these changes suits your taste. You might not need all of them.
+Note: This is a self-instruction manual. Make sure these changes suits your taste. You may not require all of them.
 
 
 ### Public key not available
@@ -27,7 +27,7 @@ Change your shell to ZSH by running the below command,
 
 ### Icons
 
-Copy the folder `Custom-Theme` from icons folder to `/usr/share/icons`
+Copy the folder `Paper-Ext` from icons folder to `/usr/share/icons`
 
 
 ### Plank
@@ -36,11 +36,18 @@ Copy the folders `Orchis-Glass-Ext` and `TransparentExt` from plank folder to `/
 
 Copy the desktop icons from `applications` to `/usr/share/applications` then add them to plank.
 
+
 ### Tweaks
 
-Using the Tweaks which can be found in Settings plug we can configure few things. Select the GTK and Metacity theme as `Arc` and the icons theme as `Custom-Theme` and the plank theme as `Orchis-Glass-Ext` or `TransparentExt`. Choose your favourite wallpaper (I prefer a dark one since it goes well with our Terminal opacity).
+Using the Tweaks which can be found in Settings plug we can configure few things. Select GTK+ as `Arc` and the icons as `Paper-Ext`.
 
-In the plank settings, set the icon size to 32 and choose `Don't hide` option for hide mode option.
+To configure plank run the command `plank --preferences` in Terminal. In plank preferences window choose either  `Orchis-Glass-Ext` or `TransparentExt` as Theme.
+
+In the plank settings (you can do this from Desktop plug in System Settings), set the icon size to 32 and choose `Don't hide` option for hide mode option.
+
+Choose your favourite wallpaper (I prefer a dark one since it goes well with our Terminal opacity).
+
+Note: More on [why plank themes are not part of settings](https://elementaryos.stackexchange.com/questions/474/why-are-planks-preferences-hidden-away)
 
 
 ### Dropbox
@@ -69,11 +76,6 @@ Add below configuration to the `$HOME/.config/synapse/config.json` file to get t
 ```
 
 
-### IntelliJ
-
-Download and install IntelliJ. Run the `install.sh` script under intellij folder to fix the icon issue.
-
-
 ### Sublime
 
 First install the package manager and then install the below plugins,
@@ -87,7 +89,13 @@ First install the package manager and then install the below plugins,
 
 ### Maven
 
-Maven3 will be installed by the `install.sh` script. But this will not create `mvn` commands. To fix this run the `install.sh` script which is under the maven directory.
+Download the latest version of maven from https://maven.apache.org/download.cgi and untar it to `/usr/share/maven`. Make sure `mvn` command is available in path (using symlink).
+
+```
+sudo ln -s /usr/share/maven/bin/mvn /usr/bin/mvn
+```
+
+If needed add `export M2_HOME=/usr/share/maven` in your `.bash_profile` or `.zshrc`.
 
 
 ### System
@@ -101,24 +109,7 @@ http://askubuntu.com/questions/100306/is-an-internet-connectivity-indicator-appl
 
 ### Caffeine
 
-Run `caffeine-plus` and make sure it is installed. After restarting the system it should be there in the system tray.
-
-
-### Chrome
-
-Run the `fix-*.sh` script under chrome directory to fix the chrome double icon issue. Go to the settings and enable 'Use system title bar and borders'. This uses the default window layout and makes Chrome being consistent with our other windows.
-
-
-### Pipelight
-
-To enable silverlight run the below command (silverlight is needed for Netflix)
-
-	sudo pipelight-plugin --enable silverlight
-
-
-### Telegram
-
-Install telegram by running the `install.sh` script under telegram directory. Note: The icon is not available for Telegram from Moka.
+Add caffeine indicator to system startup. You can do this by, System Settings -> Applications -> Startup -> Click `+` icon to add `Caffeine`. After restart it should be there in the system tray.
 
 
 ### Calendar (Maya)
@@ -154,7 +145,7 @@ Sync Calendar with Google Calendar (if using 2-step verification then you have t
 
 ### Oh-My-Zsh
 
-Configure the needed Oh-My-Zsh plugins like z, mvn, vagrant, git and the rest. The theme I use is "intheloop".
+Configure the needed Oh-My-Zsh plugins like (z mvn docker git) and so on. The theme I prefer is "intheloop".
 
 
 ### NPM
@@ -163,3 +154,24 @@ Follow the steps provided in below guide to install npm packages in global witho
 
 https://github.com/sindresorhus/guides/blob/master/npm-global-without-sudo.md
 
+
+### Docker
+
+To run `docker` commands without `sudo` command add current user to the docker usergroup.
+
+```
+sudo usermod -aG docker $(whoami)
+```
+
+More about this: https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-16-04
+
+Along with this also install docker-clean
+
+https://github.com/ZZROTDesign/docker-clean
+
+
+### Docker compose
+
+Follow the instructions from Docker official page,
+
+https://docs.docker.com/compose/install/#alternative-install-options

@@ -1,0 +1,13 @@
+[Icon Theme]
+Name=Paper-Ext
+Comment=Paper ext
+
+Inherits=Paper
+
+# Directory list
+Directories=24x24/panel
+
+[24x24/panel]
+Context=Status
+Size=24
+Type=Fixed

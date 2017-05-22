@@ -2,7 +2,7 @@
 
 # Don't run the script with 'sudo'
 
-INSTALL='sudo apt-get install -y --force-yes'
+INSTALL='sudo apt-get install -y'
 ADD_REPOSITORY='sudo apt-add-repository -y'
 
 # Update the repo
@@ -23,7 +23,6 @@ $INSTALL baobab
 
 # System monitors
 $INSTALL gnome-system-monitor
-$INSTALL indicator-multiload
 
 # System utilities
 $INSTALL dconf-tools
@@ -32,6 +31,7 @@ $INSTALL htop
 $INSTALL wmctrl
 $INSTALL synapse
 $INSTALL keepassx
+$INSTALL caffeine
 
 # Command line utilities
 $INSTALL xclip
@@ -59,19 +59,13 @@ $INSTALL build-essential
 
 # From third party repositories
 $ADD_REPOSITORY ppa:philip.scott/elementary-tweaks
-$ADD_REPOSITORY ppa:moka/daily
 $ADD_REPOSITORY ppa:snwh/pulp
 $ADD_REPOSITORY ppa:git-core/ppa
-$ADD_REPOSITORY ppa:pipelight/stable
-$ADD_REPOSITORY ppa:nilarimogard/webupd8
 $ADD_REPOSITORY ppa:webupd8team/sublime-text-3
 $ADD_REPOSITORY ppa:otto-kesselgulasch/gimp
 $ADD_REPOSITORY ppa:linrunner/tlp
 $ADD_REPOSITORY ppa:fossfreedom/indicator-sysmonitor
 $ADD_REPOSITORY ppa:libreoffice/ppa
-$ADD_REPOSITORY ppa:noobslab/apps
-$ADD_REPOSITORY ppa:webupd8team/java
-$ADD_REPOSITORY ppa:andrei-pozolotin/maven3
 
 # Add google chrome repo
 wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
@@ -91,13 +85,15 @@ sudo sh -c 'echo "deb [arch=amd64] http://archive.canonical.com/ubuntu/ xenial p
 # Add sbt repo
 sudo sh -c 'echo "deb [arch=amd64] http://dl.bintray.com/sbt/debian /" > /etc/apt/sources.list.d/sbt.list'
 
+# Add docker repo
+sudo apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 58118E89F3A912897C070ADBF76221572C52609D
+$ADD_REPOSITORY 'deb [arch=amd64] https://apt.dockerproject.org/repo ubuntu-xenial main'
+
 # Add nodejs repo
 curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
 
 # Update again for the newly added repo's
 sudo apt-get update
-
-$INSTALL libcanberra-gtk-module
 
 # Browsers
 $INSTALL google-chrome-stable
@@ -105,34 +101,24 @@ $INSTALL google-chrome-stable
 # Tweaks and themes
 $INSTALL elementary-tweaks
 
-$INSTALL faba-icon-theme
-$INSTALL faba-mono-icons
-$INSTALL moka-icon-theme
 $INSTALL paper-icon-theme
 $INSTALL paper-gtk-theme
 $INSTALL paper-cursor-theme
 
 $INSTALL arc-theme
-$INSTALL moka-gtk-theme
-$INSTALL orchis-gtk-theme
 
 # System
 $INSTALL tlp tlp-rdw
 $INSTALL indicator-sysmonitor
-$INSTALL caffeine-plus
 
 # Essentials
 $INSTALL libreoffice
 
 # Media
-$INSTALL minitube
 $INSTALL gimp
-$INSTALL pipelight-multi
-$INSTALL skype
 
 # Dev and command line utilities
-$INSTALL maven3
-$INSTALL sbt
+$INSTALL docker-engine
 $INSTALL sublime-text-installer
 $INSTALL nodejs
 $INSTALL git

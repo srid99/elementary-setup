@@ -1,12 +1,12 @@
 elementaryOS setup
 ==================
 
-A setup script to install the softwares/tools/utilities which I use regularly.
-Though the script itself can be used for any Ubuntu based distro but it is written keeping elementaryOS in mind.
-So while trying on other distros do it with care.
+A script to install the softwares/tools/utilities needed on regular basis.
 
-Run the `install.sh` script which will install the packages.
+Although the script is created for elementaryOS but it can be used in any other Ubuntu based distro's.
+
+Before running the script do have a look at the script and remove/add the (unwanted/wanted) packages.
+Run `install.sh` which will do the rest. This script requires `sudo` rights.
 
 Once after installing the packages go through the things mentioned in `INSTRUCTIONS.md` file to complete the setup.
-The installation script installs the packages. But few packages needs configurations to make use of them.
-For now this is done manually so we know what kind of configuration is needed and why.
+The installation script installs the packages. But few packages needs some manual/extra configuration to make use of them.

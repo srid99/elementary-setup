@@ -14,8 +14,9 @@ If you get this error run the below command with the missing public key
 
 ### Terminal
 
-Terminal settings has to be changed. Set Opacity to 80 and choose the theme to Zenburn.
-Change the background of Terminal by modifying the background property using dconf-editor. The proeprty can be located at 'org.pantheon.terminal' package. Also uncheck the 'unsafe-paste-alert'.
+[Change the theme of the terminal](https://github.com/Mayccoll/Gogh/blob/master/content/install.md#create-a-command-line) (My preference is 'Material')
+
+From System Settings -> Tweaks -> Terminals ; Disable unsafe paste alerts
 
 
 ### Shell

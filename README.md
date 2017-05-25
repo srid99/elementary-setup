@@ -10,4 +10,3 @@ Run [install.sh](install.sh) which will do the rest. This script requires `sudo`
 
 Once after installing the packages go through the things mentioned in [INSTRUCTIONS.md](INSTRUCTIONS.md) file to complete the setup.
 The installation script installs the packages. But few packages needs some manual/extra configuration to make use of them.
-

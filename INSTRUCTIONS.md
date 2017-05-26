@@ -176,3 +176,11 @@ https://github.com/ZZROTDesign/docker-clean
 Follow the instructions from Docker official page,
 
 https://docs.docker.com/compose/install/#alternative-install-options
+
+
+### Intellij
+
+Copy the file [60-intellij.conf](./intellij/60-intellij.conf) to directory `/etc/sysctl.d/` and run `sudo sysctl -p --system` or reboot.
+
+https://confluence.jetbrains.com/display/IDEADEV/Inotify+Watches+Limit
+

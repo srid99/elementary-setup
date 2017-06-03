@@ -184,3 +184,15 @@ Copy the file [60-intellij.conf](./intellij/60-intellij.conf) to directory `/etc
 
 https://confluence.jetbrains.com/display/IDEADEV/Inotify+Watches+Limit
 
+
+### Wireshark
+
+By default wireshark cannot do TCP dump non non-root users. Let's allow that and add current user to `wireshark` user group.
+
+
+```
+sudo dpkg-reconfigure wireshark-common
+sudo usermod -aG wireshark $(whoami)
+```
+
+This requires restarting/logout the system.

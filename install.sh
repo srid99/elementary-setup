@@ -67,6 +67,7 @@ $ADD_REPOSITORY ppa:linrunner/tlp
 $ADD_REPOSITORY ppa:fossfreedom/indicator-sysmonitor
 $ADD_REPOSITORY ppa:libreoffice/ppa
 $ADD_REPOSITORY ppa:longsleep/golang-backports
+$ADD_REPOSITORY ppa:wireshark-dev/stable 
 
 # Add google chrome repo
 wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
@@ -119,6 +120,7 @@ $INSTALL libreoffice
 $INSTALL gimp
 
 # Dev and command line utilities
+$INSTALL wireshark
 $INSTALL docker-engine
 $INSTALL sublime-text-installer
 $INSTALL nodejs

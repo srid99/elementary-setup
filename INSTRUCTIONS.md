@@ -25,6 +25,8 @@ Change your shell to ZSH by running the below command,
 
 	chsh $USER -s $(which zsh)
 
+Don't forget to have a look at [zsh-users](https://github.com/zsh-users) for extra pluings. Ex: zsh-syntax-highlighting, zsh-autosuggestions, zsh-completions which are not part of oh-my-zsh.
+
 
 ### Icons
 
